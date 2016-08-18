@@ -1,0 +1,49 @@
+//
+//  HomeItem.h
+//  MyOneDemo
+//
+//  Created by 蚊子 on 16/8/9.
+//  Copyright © 2016年 wenzi. All rights reserved.
+//
+
+#import "BaseModel.h"
+
+@interface HomeItem : BaseModel
+/*
+{
+    "author_id" = "-1";
+    commentnum = 302;
+    "hp_author" = "Life&\U675c\U516eShrek \U4f5c\U54c1";
+    "hp_content" = "\U6bcf\U5929\U90fd\U6709\U65e0\U6570\U6b21\U5bf9\U751f\U6d3b\U8d77\U4e86\U6740\U5fc3\Uff0c\U53ef\U624b\U65e0\U5bf8\U94c1\Uff0c\U603b\U4f1a\U9677\U5165\U5bf9\U5cd9\U7684\U50f5\U5c40\U3002\U4eba\U4eba\U90fd\U53ef\U4ee5\U6210\U4e3a\U4ed6\U4eba\U7684\U519b\U5e08\Uff0c\U53ef\U8fdb\U9000\U8f93\U8d62\Uff0c\U53c8\U65e0\U4eba\U4e0e\U5171\U3002\U8bf4\U5230\U5e95\U554a\Uff0c\U4eba\U751f\U53ea\U662f\U4e00\U4e2a\U4eba\U7684\U6323\U624e\Uff0c\U4e00\U4e2a\U4eba\U7684\U6218\U6597\U3002by \U5927\U5c06\U519b\U90ed";
+    "hp_img_original_url" = "http://image.wufazhuce.com/FuN_2ux09O-zFiBhpMzjBRwvtfwG";
+    "hp_img_url" = "http://image.wufazhuce.com/FuN_2ux09O-zFiBhpMzjBRwvtfwG";
+    "hp_makettime" = "2016-08-01 23:00:00";
+    "hp_title" = "VOL.1395";
+    "hpcontent_id" = 1422;
+    "ipad_url" = "http://image.wufazhuce.com/Fim1iVZq3xhPiorqw-TkyJdnLMPP";
+    "last_update_date" = "2016-07-29 10:34:04";
+    praisenum = 29138;
+    sharenum = 4081;
+    "wb_img_url" = "";
+    "web_url" = "http://m.wufazhuce.com/one/1422";
+}
+*/
+@property (nonatomic, copy) NSString *authorId;
+@property (nonatomic, copy) NSString *author;
+@property (nonatomic, copy) NSString *content;
+@property (nonatomic, copy) NSString *imageURL;
+@property (nonatomic, copy) NSString *imageOriginalURL;
+@property (nonatomic, copy) NSString *makeTime;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *contentId;
+@property (nonatomic, copy) NSString *ipadURL;
+@property (nonatomic, copy) NSString *lastUpdateDate;
+@property (nonatomic, copy) NSString *webImageURL;
+@property (nonatomic, copy) NSString *webURL;
+@property (nonatomic, assign) NSUInteger commentnum;
+@property (nonatomic, assign) NSUInteger praisenum;
+@property (nonatomic, assign) NSUInteger sharenum;
+
+- (void)setAllValuesByHomeData:(NSDictionary *)homeData;
+
+@end

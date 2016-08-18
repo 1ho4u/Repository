@@ -1,0 +1,27 @@
+PODS:
+  - GMCPagingScrollView (1.0.3)
+  - Masonry (1.0.1)
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+  - UITableView+FDTemplateLayoutCell (1.4)
+
+DEPENDENCIES:
+  - GMCPagingScrollView (~> 1.0.3)
+  - Masonry (~> 1.0.1)
+  - SDCycleScrollView (~> 1.65)
+  - SDWebImage (~> 3.8.1)
+  - UITableView+FDTemplateLayoutCell (~> 1.4)
+
+SPEC CHECKSUMS:
+  GMCPagingScrollView: 32285a8e2c0162a4709dfcb4fefb0b9896f87db2
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
+
+PODFILE CHECKSUM: b41a08d9e40d955ee396841af489bcd2e00bc07f
+
+COCOAPODS: 1.0.1

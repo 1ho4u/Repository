@@ -1,0 +1,33 @@
+//
+//  HomeItem.m
+//  MyOneDemo
+//
+//  Created by 蚊子 on 16/8/9.
+//  Copyright © 2016年 wenzi. All rights reserved.
+//
+
+#import "HomeItem.h"
+
+@implementation HomeItem
+
+- (void)setAllValuesByHomeData:(NSDictionary *)homeData {
+    
+    self.authorId = [homeData objectForKey:@"author_id"];;
+    self.commentnum = [[homeData objectForKey:@"commentnum"] integerValue];;
+    self.author = [homeData objectForKey:@"hp_author"];
+    self.content = [homeData objectForKey:@"hp_content"];
+    self.imageOriginalURL = [homeData objectForKey:@"hp_img_original_url"];
+    self.imageURL = [homeData objectForKey:@"hp_img_url"];
+    self.makeTime = [homeData objectForKey:@"hp_makettime"];
+    self.title = [homeData objectForKey:@"hp_title"];
+    self.contentId = [homeData objectForKey:@"hpcontent_id"];
+    self.ipadURL = [homeData objectForKey:@"ipad_url"];
+    self.lastUpdateDate = [homeData objectForKey:@"last_update_date"];
+    self.praisenum = [[homeData objectForKey:@"praisenum"] integerValue];;
+    self.sharenum = [[homeData objectForKey:@"sharenum"] integerValue];;
+    self.webImageURL =[homeData objectForKey:@" wb_img_url"];
+    self.webURL = [homeData objectForKey:@"web_url"];
+    
+}
+
+@end

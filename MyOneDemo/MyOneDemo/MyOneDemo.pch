@@ -1,0 +1,15 @@
+//
+//  MyOneDemo.pch
+//  MyOneDemo
+//
+//  Created by 蚊子 on 16/8/17.
+//  Copyright © 2016年 wenzi. All rights reserved.
+//
+
+#ifndef MyOneDemo_pch
+#define MyOneDemo_pch
+
+#pragma mark - Header
+#import "Macors.h"
+
+#endif /* MyOneDemo_pch */

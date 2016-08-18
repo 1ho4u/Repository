@@ -1,0 +1,42 @@
+//
+//  MovieListItemCell.m
+//  MyOneDemo
+//
+//  Created by 蚊子 on 16/8/15.
+//  Copyright © 2016年 wenzi. All rights reserved.
+//
+
+#import "MovieListItemCell.h"
+#import <Masonry/Masonry.h>
+
+NSString *const kMovieListItemCellID = @"MovieListItemCellID";
+
+@interface MovieListItemCell ()
+
+@property (nonatomic ,strong) UIImageView *coverView;
+
+@end
+
+@implementation MovieListItemCell
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    NSLog(@"initWithFrame");
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setUpViews];
+    }
+    return self;
+}
+
+- (void)setUpViews {
+    self.backgroundColor = [UIColor whiteColor];
+    
+    _coverView.backgroundColor = [UIColor whiteColor];
+    [self.contentView addSubview:_coverView];
+    [_coverView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.contentView);
+    }];
+    
+}
+
+@end

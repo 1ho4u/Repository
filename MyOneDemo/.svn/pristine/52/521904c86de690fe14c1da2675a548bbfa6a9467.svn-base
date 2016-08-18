@@ -1,0 +1,25 @@
+//
+//  MovieItem.m
+//  MyOneDemo
+//
+//  Created by 蚊子 on 16/8/16.
+//  Copyright © 2016年 wenzi. All rights reserved.
+//
+
+#import "MovieItem.h"
+
+@implementation MovieItem
+
+- (void)setAllValuesByObj:(NSDictionary *)item {
+    self.imageURL = [item valueForKey:@"cover"];
+    self.movieId = [[item valueForKey:@"id"] integerValue];
+    self.releaseTime = [item valueForKey:@"releasetime"];
+    self.revisedScore = [[item valueForKey:@"revisedscore"] integerValue];
+    self.score = [[item valueForKey:@"score"] integerValue];
+    self.scoreTime = [item valueForKey:@"scoretime"];
+    self.title = [item valueForKey:@"title"];
+    self.verse = [item valueForKey:@"verse"];
+    self.verse_en = [item valueForKey:@"verse_en"];
+}
+
+@end

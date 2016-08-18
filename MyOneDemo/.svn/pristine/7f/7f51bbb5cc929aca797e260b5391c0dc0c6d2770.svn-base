@@ -1,0 +1,24 @@
+//
+//  HTTPRequester.h
+//  MyOneDemo
+//
+//  Created by 蚊子 on 16/8/9.
+//  Copyright © 2016年 wenzi. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+typedef void(^SuccessBlock)(id responseData);
+typedef void(^FailBlock)(NSError *error);
+
+@interface HTTPRequester : NSObject
+
+#pragma mark - get api string
+
+#pragma mark - Home
++ (void)requestHomeMoreWithSuccess:(SuccessBlock)success fail:(FailBlock)fail;
+
+#pragma makr - Movie
++ (void)requestMovieListWithOffset:(NSUInteger)offset success:(SuccessBlock)success fail:(FailBlock)fail;
+
+@end
